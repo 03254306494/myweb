@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>farysaaz</title>
+</head>
+<style>
+    @keyframes fade-in {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  
+    .animate-fade-in {
+      animation: fade-in 1s ease-out;
+    }
+
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  
+    .animate-gradient {
+      animation: gradientAnimation 15s ease infinite;
+      background-size: 400% 400%;
+    }
+
+  </style>
+  
+<body>
+
+
+    <!-- Navbar -->
+<nav class="bg-white shadow-md fixed w-full z-10 top-0 left-0">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center">
+          <span class="text-2xl font-bold text-blue-600">farysaaz</span>
+        </div>
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600">About</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600">Pricing</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+            get started
+          </button>
+        </div>
+        <!-- Mobile menu button -->
+        <div class="flex md:hidden items-center">
+          <button id="menu-btn" class="text-gray-700 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pt-2 pb-4 space-y-2 bg-white">
+      <a href="#" class="block text-gray-700 hover:text-blue-600">Home</a>
+      <a href="#" class="block text-gray-700 hover:text-blue-600">About</a>
+      <a href="#" class="block text-gray-700 hover:text-blue-600">Pricing</a>
+      <a href="f1" class="block text-gray-700 hover:text-blue-600">Contact</a>
+      <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+        Get Started
+      </button>
+    </div>
+  </nav>
+<!-- Hero Section -->
+<!-- Full-Width Hero Section -->
+<!-- Full Width Hero Section with Image and Centered Content -->
+<section class="w-full py-20 bg-white flex flex-col items-center justify-center text-center px-4">
+    <!-- Tagline -->
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+    </h1>
+  
+    <!-- Subtext -->
+    <p class="text-lg sm:text-xl text-gray-600 mb-10 max-w-2xl">
+    </p>
+  
+    <!-- Image -->
+    <img
+      src=".vscode/2e445fc1-367a-43b7-ad40-ab2b3255a3c8.jpg"
+      alt="Software Illustration"
+      class="w-full max-w-4xl rounded-xl shadow-lg mb-10"
+    />
+  
+    <!-- Action Buttons -->
+    <div class="flex flex-col sm:flex-row gap-4">
+      <a
+        href="#"
+        class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-blue-700 transition"
+      >
+        Get Started
+      </a>
+      <a
+        href="#"
+        class="bg-gray-100 text-gray-800 px-8 py-3 rounded-lg font-semibold text-lg hover:bg-gray-200 transition"
+      >
+        Learn More
+      </a>
+    </div>
+  </section>
+    
+  <!-- Custom Tailwind CSS for Background Animation -->
+  <style>
+     </style>
+    
+
+
+
+  
+  <!-- Script -->
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+  
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+  <!-- Product Cards Section -->
+<!-- Item Cards Section -->
+<section class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold text-center text-gray-900 mb-12" style="color: rgb(153, 0, 255);">branded article</h2>
+      <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+  
+        <!-- Item Card -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+          <img src=".vscode/7139c7a5-68b9-4844-9cb7-0c91be52a6e2.jpg" alt="Product Image" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">coatset</h3>
+            <p class="text-gray-600 text-sm mb-4">Dominated by warm mustard, olive green, deep black, and off-white tones in a bold and structured ethnic print</p>
+            <div class="flex justify-between items-center">
+              <span class="text-blue-600 font-bold text-lg">6500</span>
+              <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- You can duplicate this card block for more items -->
+        <!-- Item Card 2 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+          <img src=".vscode/9805f602-8bd2-4b12-a7fd-d34153494945.jpg" alt="Product Image" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">coatset</h3>
+            <p class="text-gray-600 text-sm mb-4">soft lawn/cotton blend – ideal for mid-season wear</p>
+            <div class="flex justify-between items-center">
+              <span class="text-blue-600 font-bold text-lg">5500</span>
+              <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- More cards can be added here -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+            <img src=".vscode/c750ca06-06e1-4bec-a05e-2e4a1fad6801.jpg" alt="Product Image" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">coatset</h3>
+              <p class="text-gray-600 text-sm mb-4">Perfect for casual outings, office wear, or semi-formal lunch gatherings</p>
+              <div class="flex justify-between items-center">
+                <span class="text-blue-600 font-bold text-lg">6500</span>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+    
+          <!-- More cards can be added here -->
+          <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+            <img src=".vscode/9805f602-8bd2-4b12-a7fd-d34153494945.jpg" alt="Product Image" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Another Item</h3>
+              <p class="text-gray-600 text-sm mb-4">This is another card showcasing a different product.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-blue-600 font-bold text-lg">9500</span>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+    
+          <!-- More cards can be added here -->
+        
+      </div>
+    </div>
+  </section>
+  <section class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold text-center text-gray-900 mb-12" style="color: blue;">farysaaz</h2>
+      <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+  
+        <!-- Item Card -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+          <img src=".vscode/9805f602-8bd2-4b12-a7fd-d34153494945.jpg" alt="Product Image" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">coatset</h3>
+            <p class="text-gray-600 text-sm mb-4">Brief description of the product that fits nicely in this space.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-blue-600 font-bold text-lg">9500</span>
+              <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- You can duplicate this card block for more items -->
+        <!-- Item Card 2 -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+          <img src=".vscode/d0973e23-b20f-4528-bcef-2647ebf63f1e.jpg" alt="Product Image" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">coatset</h3>
+            <p class="text-gray-600 text-sm mb-4">This is another card showcasing a different product.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-blue-600 font-bold text-lg">7500</span>
+              <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- More cards can be added here -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+            <img src=".vscode/d8a082ae-3400-4b7e-97ae-19bcc0ba22a2.jpg" alt="Product Image" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">coatset</h3>
+              <p class="text-gray-600 text-sm mb-4">This is another card showcasing a different product.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-blue-600 font-bold text-lg">4500</span>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+    
+          <!-- More cards can be added here -->
+          <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+            <img src=".vscode/c5d9c9bd-ad4c-4e2d-bb7a-55ecb955100b.jpg" alt="Product Image" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">coatset</h3>
+              <p class="text-gray-600 text-sm mb-4">This is another card showcasing a different product.</p>
+              <div class="flex justify-between items-center">
+                <span class="text-blue-600 font-bold text-lg">10200</span>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+    
+          <!-- More cards can be added here -->
+        
+      </div>
+    </div>
+  </section>
+
+<!-- Card Slider Section -->
+<section class="bg-gray-100 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">branded item</h2>
+  
+      <!-- Slider Container -->
+      <div class="relative">
+        <!-- Buttons -->
+        <button id="prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white shadow-lg p-2 rounded-full z-10 hover:bg-gray-200">
+          &#8592;
+        </button>
+        <button id="next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white shadow-lg p-2 rounded-full z-10 hover:bg-gray-200">
+          &#8594;
+        </button>
+  
+        <!-- Slider Wrapper -->
+        <div id="slider" class="flex overflow-x-auto scroll-smooth space-x-6 px-2 pb-4 no-scrollbar">
+          <!-- Card 1 -->
+          <div class="flex-shrink-0 w-72 bg-white rounded-xl shadow-md">
+            <img src=".vscode/c5d9c9bd-ad4c-4e2d-bb7a-55ecb955100b.jpg" class="w-full h-44 object-cover rounded-t-xl" alt="Item 1">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">trending</h3>
+              <p class="text-sm text-gray-500">wear for modern life</p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="flex-shrink-0 w-72 bg-white rounded-xl shadow-md">
+            <img src=".vscode/c5d9c9bd-ad4c-4e2d-bb7a-55ecb955100b.jpg" class="w-full h-44 object-cover rounded-t-xl" alt="Item 2">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Urban Style</h3>
+              <p class="text-sm text-gray-500">Fashionable </p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="flex-shrink-0 w-72 bg-white rounded-xl shadow-md">
+            <img src=".vscode/c5d9c9bd-ad4c-4e2d-bb7a-55ecb955100b.jpg" class="w-full h-44 object-cover rounded-t-xl" alt="Item 3">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Eco Store</h3>
+              <p class="text-sm text-gray-500">Sustainable and clean products.</p>
+            </div>
+          </div>
+          <!-- Add more cards if needed -->
+          <div class="flex-shrink-0 w-72 bg-white rounded-xl shadow-md">
+            <img src=".vscode/c7579d70-0304-4c66-8d36-7df2213cb98e.jpg" class="w-full h-44 object-cover rounded-t-xl" alt="Item 3">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Eco Store</h3>
+              <p class="text-sm text-gray-500">Sustainable and clean products.</p>
+            </div>
+          </div>
+         
+          <div class="flex-shrink-0 w-72 bg-white rounded-xl shadow-md">
+            <img src=".vscode/807d585f-9cbe-4de8-a034-e53f95ffa412.jpg" class="w-full h-44 object-cover rounded-t-xl" alt="Item 3">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Eco Store</h3>
+              <p class="text-sm text-gray-500">Sustainable and clean products.</p>
+            </div>
+          </div>
+         
+          <div class="flex-shrink-0 w-72 bg-white rounded-xl shadow-md">
+            <img src=".vscode/d2ad0b1d-371e-4ae3-9ebf-94b3f3e773a6.jpg" class="w-full h-44 object-cover rounded-t-xl" alt="Item 3">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">kokopc</h3>
+              <p class="text-sm text-gray-500">So elegent
+              </p>
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-72 bg-white rounded-xl shadow-md">
+            <img src=".vscode/c5d9c9bd-ad4c-4e2d-bb7a-55ecb955100b.jpg" class="w-full h-44 object-cover rounded-t-xl" alt="Item 3">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">Eco Store</h3>
+              <p class="text-sm text-gray-500">Sustainable and clean products.</p>
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-72 bg-white rounded-xl shadow-md">
+            <img src=".vscode/c5d9c9bd-ad4c-4e2d-bb7a-55ecb955100b.jpg" class="w-full h-44 object-cover rounded-t-xl" alt="Item 3">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">farysaaz</h3>
+              <p class="text-sm text-gray-500"></p>
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-72 bg-white rounded-xl shadow-md">
+            <img src=".vscode/c5d9c9bd-ad4c-4e2d-bb7a-55ecb955100b.jpg" class="w-full h-44 object-cover rounded-t-xl" alt="Item 3">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold">farysaaz</h3>
+              <p class="text-sm text-gray-500">qulted product</p>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Footer -->
+   <div class="f1">
+    <footer class="bg-gray-900 text-white pt-16 pb-10 px-4 sm:px-6 lg:px-8 animate-fade-in">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+      
+          <!-- Company Info -->
+          <div>
+            <h2 class="text-2xl font-bold mb-4">farysaaz</h2>
+            <p class="text-gray-400 mb-4">
+              a name of brand farysaaz
+            </p>
+            <div class="flex space-x-4 mt-4">
+              <!-- WhatsApp -->
+              <a href="https://wa.me/1234567890" target="_blank" class="hover:text-green-400 transition">
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 32 32">
+                  <path d="M16 .4C7.2.4 0 7.6 0 16c0 3 .8 5.8 2.2 8.2L.1 31.9l8-2.1c2.3 1.3 5 2 7.9 2 8.8 0 16-7.2 16-16S24.8.4 16 .4zm0 29.2c-2.3 0-4.6-.6-6.6-1.7l-.5-.3-4.7 1.2 1.3-4.6-.3-.6C4.1 21.1 3.4 18.6 3.4 16 3.4 8.8 8.8 3.4 16 3.4S28.6 8.8 28.6 16 23.2 29.6 16 29.6zm8.6-9.9c-.3-.2-1.8-.9-2.1-1-.3-.1-.6-.2-.8.2-.2.3-.9 1.1-1.1 1.3s-.4.3-.7.1c-.3-.2-1.2-.4-2.3-1.4-0.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.2-.7.2-.2.4-.5.6-.7.2-.3.2-.5 0-.8s-1.1-2.7-1.5-3.7c-.4-1-.8-.8-1.1-.8s-.6 0-.8 0-.6.1-.9.4c-.3.3-1.1 1.1-1.1 2.7s1.1 3.1 1.3 3.3c.2.3 2.2 3.3 5.4 4.6.8.3 1.4.5 1.9.6.8.2 1.5.2 2.1.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.1-1.4z"/>
+                </svg>
+              </a>
+              <!-- Facebook -->
+              <a href="https://facebook.com" target="_blank" class="hover:text-blue-400 transition">
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                  <path d="M22.7 0H1.3C.6 0 0 .6 0 1.3v21.3C0 23.4.6 24 1.3 24h11.5v-9.3H9.7v-3.6h3.1V8.4c0-3.1 1.9-4.8 4.6-4.8 1.3 0 2.5.1 2.8.1v3.2h-1.9c-1.5 0-1.8.7-1.8 1.8v2.3h3.6l-.5 3.6H16.5V24h6.2c.7 0 1.3-.6 1.3-1.3V1.3c0-.7-.6-1.3-1.3-1.3z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+      
+          <!-- Contact Form -->
+          <div class="md:col-span-2">
+            <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input type="text" placeholder="Name" class="p-3 rounded bg-gray-800 text-white focus:outline-none" required />
+              <input type="email" placeholder="Email" class="p-3 rounded bg-gray-800 text-white focus:outline-none" required />
+              <textarea placeholder="Your Message" rows="4" class="md:col-span-2 p-3 rounded bg-gray-800 text-white focus:outline-none" required></textarea>
+              <button type="submit" class="md:col-span-2 px-6 py-3 bg-blue-600 rounded hover:bg-blue-700 transition font-semibold">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </footer>
+      
+   </div>
+
+  
+  <!-- JavaScript -->
+  <script>
+    const slider = document.getElementById('slider');
+    const next = document.getElementById('next');
+    const prev = document.getElementById('prev');
+  
+    next.addEventListener('click', () => {
+      slider.scrollBy({ left: 300, behavior: 'smooth' });
+    });
+  
+    prev.addEventListener('click', () => {
+      slider.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+  </script>
+  
+  <!-- Tailwind Utility for Hiding Scrollbar -->
+  <style>
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+  
+
+
+   
+
+<!-- Fade-In Animation using Tailwind plugin (optional) -->
+
+
+    
+
+<script>
+    const glow = document.getElementById('cursor-glow');
+    document.addEventListener('mousemove', (e) => {
+      glow.style.transform = `translate(${e.clientX - 144}px, ${e.clientY - 144}px)`;
+    });
+  </script>
+  
+    <!-- <h2 class="text-blue-500  text-9xl">this is the akls/djf;kadhsejhg</h2> -->
+    <!-- <h2 class="text-pink-500  ">this is the akls/djf;kadhsejhg</h2> -->
+
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sed aperiam esse architecto voluptatum veniam deleniti consequatur magnam quidem, reprehenderit assumenda doloribus? Quibusdam, consequuntur natus maiores reprehenderit quo aperiam laborum.</p> -->
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+</body>
+</html>
